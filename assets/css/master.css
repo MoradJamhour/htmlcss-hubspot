@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*rows and columns*/
+.row{
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.col-50{
+  width: 50%;
+}
+
+.col-100{
+  width: 100%;
+}
+
+/*Floating the colums*/
+div[class^="col"]{
+  float: left;
+  padding: 0 5px;
+}
+
+/*centering content*/
+.alignment {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*fixed navbar style*/
+header .top-nav{
+  background-color: #F4F9FD;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 80px;
+  border-bottom: 2px solid #000000;
+}
+
+/*buttons and lists in the navbar*/
+header ul {
+  display: inline-block;
+  list-style: none;
+}
+
+header li {
+  display: inline-block;
+}
+
+.nav-left{
+  float: left;
+}
+
+/*div .nav-left */a {
+  text-decoration: none;
+  color: #33475B;
+}
+
+.border span{
+  border-right: 1px solid #33475B;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+header .fas.fa-chevron-down {
+  margin-right: 20px;
+}
+
+.no-border{
+  margin-left: 5px;
+}
+
+.nav-right a {
+  text-decoration: none;
+}
+
+.nav-right{
+  float: right;
+}
+
+header ul li a .fas.fa-search{
+  color: #00A4BD;
+}
+
+header ul li .btn-empty {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #FC8C5A;
+  border: 1px solid #FC8C5A;
+}
+
+header ul li .btn-full {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #FE775A;
+  color: #ffffff;
+  border: none;
+}
+
+/*styling della navbar con logo*/
+.bot-nav {
+  margin-top: 110px; /*non ho idea del perchè funzioni*/
+  margin-bottom: 10px;
+}
+
+.bot-nav img {
+  vertical-align: middle;
+}
+
+.bot-nav ul{
+  float: right;
+}
+
+.bot-nav i {
+  margin-left: 5px;
+}
+
+/*styling del jumbo*/
+.jumbo {
+  background-image: url('../img/jumbotron.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+h1{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #33475B;
+}
+
+.jumbo p{
+  margin-bottom: 60px;
+}
+
+p.lil{
+  margin-top: 60px;
+  font-size: 12px;
+  padding-bottom: 200px;
+}
+
+.btn-orange{
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: #FE775A;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+}
+
+.row-l{
+  margin: 0;
+}
+
+.line{
+  margin: 0;
+  padding: 0;
+  background-color: #AFEBE4;
+  height: 12%;
+  position: absolute;
+  bottom: 0;
+  border-top: 3px solid #33475C;
+  border-bottom: 3px solid #33475C;
+}
